@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | HomeWork 11 | Task 2</title>
+</head>
+<body>
+<script>
+
+    var salaries = {
+        "Вася": 100,
+        "Петя": 300,
+        "Даша": 250
+    };
+
+    var max = 0;
+    var maxName = 0;
+
+    function printMax(salaries) {
+        for (var name in salaries) {
+            if (max < salaries[name]) {
+                max = salaries[name];
+                maxName = name;
+            }
+        }
+        console.log(maxName || "нет сотрудников");
+    }
+
+    printMax(salaries);
+
+</script>
+</body>
+</html>

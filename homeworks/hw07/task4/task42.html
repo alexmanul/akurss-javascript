@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | HomeWork 7: Task 4.2</title>
+    <script>
+		var password = prompt("Введите пароль: ");
+
+		function checkPass(password, onSuccess, onError) {
+			if (password.length > 8) {
+				onSuccess();
+			} else {
+				onError();
+			}
+		}
+
+		function onSuccess() {
+			alert("Успех");
+		}
+
+		function onError() {
+			alert("Это фиаско!");
+		}
+
+		checkPass(password, onSuccess, onError);
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

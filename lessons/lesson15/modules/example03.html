@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | Lesson 15</title>
+    <script>
+        function makeCounter() {
+
+            function counter() {
+                return counter.currentCount++;
+            }
+
+            counter.currentCount = 1;
+
+            return counter;
+        }
+
+        var counter = makeCounter();
+
+        console.log(counter());
+        console.log(counter());
+        console.log(counter());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

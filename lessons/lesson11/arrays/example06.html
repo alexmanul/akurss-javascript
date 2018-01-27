@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var arr1 = ["Apple", "Pear", "Pineapple", "Banana"];
+        arr1.splice(2, 0, "Orange", "Melon");
+        console.log(arr1);
+
+        arr1.splice(2, 2, "Kiwi", "Mango");
+        console.log(arr1);
+
+        var arr2 = arr1.slice(1, 3);
+        console.log(arr2);
+
+        var arr3 = arr1.slice(1);
+        console.log(arr3);
+
+        var arr4 = arr1.slice();
+        console.log(arr4);
+    </script>
+</head>
+<body>
+</body>
+</html>

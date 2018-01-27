@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        // LexicalEnviroment = {greet: function(){...}}
+
+        function greet(name, surname) {
+
+            console.log("Hello" + getFullName());
+
+            // LexicalEnviroment = {name: "John", surname: "Doe", getFullName: function(){...}}
+            // {{Scope}} = {greet: function(){...}}
+
+            function getFullName() {
+                // LexicalEnviroment = {name: undefined}
+                // {{Scope}} = {name: "John", surname: "Doe", getFullName: function(){...}}
+                // var name = "Amanda";
+                // LexicalEnviroment = {name: "Amanda"}
+                // {{Scope}} = {name: "John", surname: "Doe", getFullName: function(){...}}
+                return name + surname;
+            }
+        }
+
+        greet("John", "Doe");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

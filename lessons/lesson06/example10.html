@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AKurss | Lesson 06 </title>
+    <style>
+        @keyframes example {
+            0% {
+                background-color: orange;
+            }
+            50% {
+                border-radius: 50%;
+            }
+            100% {
+                background-color: yellow;
+            }
+        }
+
+        @keyframes fade {
+
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            animation: example 10s ease infinite, fade 5s ease infinite;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+</div>
+</body>
+
+</html>

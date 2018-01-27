@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #mario {
+            position: absolute;
+            top: 50px;
+            left: 20px
+        }
+    </style>
+</head>
+
+<body>
+<img id="mario" src="https://supermariorun.com/img/stage/mario03.png" height="150">
+
+<style>
+    @keyframes moveMario {
+
+        0% {
+            transform: translate(0);
+        }
+        50% {
+            transform: translate(500px) rotate(0deg);
+        }
+        100% {
+            transform: translate(0) rotate(-360deg);
+        }
+    }
+
+    #mario {
+        animation: moveMario 3s infinite;
+    }
+</style>
+
+</body>
+</html>

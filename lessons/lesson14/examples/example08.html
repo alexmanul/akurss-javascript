@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        // window = {a: undefined, b: function(){}, c = undefined}
+
+        var a = 5;
+
+        // window = {a: 5, b:function(){}, c = undefined}
+
+        function b(test) {
+
+            // LexicalEnviroment = {p: undefined, test: "John"}
+
+            var p = "Hello";
+            // LexicalEnviroment = {p: "Hello", test: "John"}
+
+            alert(p + ", " + test);
+        }
+
+        // window = {a: 5, b: function(){}, c = undefined}
+
+        var c = function () {
+
+        };
+        // window = {a: 5, b: function(){}, c = function(){} }
+
+        b("John");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | HomeWork 11 | Task 4</title>
+</head>
+<body>
+<script>
+    arr = ["test", 2, 1.5, false];
+
+    function find(arr, value) {
+        for (var i = 0; i < arr.length; i++) {
+            if (value === arr[i]) return i;
+        }
+        return -1;
+    }
+
+    console.log(find(arr, "test")); // 0
+    console.log(find(arr, 2)); // 1
+    console.log(find(arr, 1.5)); // 2
+
+    console.log(find(arr, 0)); // -1
+
+</script>
+</body>
+</html>

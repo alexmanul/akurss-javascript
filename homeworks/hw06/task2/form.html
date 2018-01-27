@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript HomeWork</title>
+    <style>
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+<form>
+    <div class="input">
+        <p><label for="input">Input </label>
+            <input type="text" id="input" onkeyup="userInput()">
+        </p>
+        <p>Output: <span id="output"> </span></p>
+        <p>Type of output: <span id="output-type"> </span></p>
+        <p>Value == 123: <span id="equals"> </span></p>
+        <p>Value === 123: <span id="equals-full"> </span></p>
+    </div>
+
+</form>
+<script>
+	function userInput() {
+
+		var input = document.getElementById("input");
+		document.getElementById("output").innerHTML = input.value;
+		document.getElementById("output-type").innerHTML = typeof input.value;
+
+		document.getElementById("equals").innerHTML = (input.value == 123);
+		document.getElementById("equals-full").innerHTML = input.value === 123;
+	}
+
+</script>
+</body>
+
+</html>

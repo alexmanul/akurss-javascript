@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        function doSmth(a, b, c) {
+            console.log(a);
+            console.log(b);
+            console.log(c);
+            for (var i = 0; i < arguments.length; i++)
+                console.log(arguments[i]);
+        }
+
+        doSmth("bla");
+        console.log("---");
+
+        doSmth("bla", "bla1");
+        console.log("---");
+
+        doSmth("bla", "bla1", "bla2");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

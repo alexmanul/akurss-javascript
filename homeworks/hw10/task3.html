@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork 10 | Task 3</title>
+</head>
+<body>
+<script>
+        var string = prompt("Input your string: ");
+        alert(checkSpam(string));
+
+    function checkSpam(string) {
+        var result1 = string.match(/buy/i);
+        var result2 = string.match(/free/i);
+        if (result1 || result2) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

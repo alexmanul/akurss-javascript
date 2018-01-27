@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Скачать без регистрации</title>
+  <style>
+    body {
+      background-color: #FEF8F0;
+      font-size: 20px;
+    }
+
+    header {
+      margin: 20px;
+    }
+
+    label {
+      display: inline-block;
+      width: 180px;
+    }
+
+    input,
+    select {
+      height: 45px;
+      width: 250px;
+      box-sizing: content-box;
+      border: solid 1px grey;
+      border-radius: 10px;
+      font: 16px Arial, sans-serif;
+      margin-right: 0;
+    }
+
+    textarea {
+      height: 90px;
+      width: 250px;
+      box-sizing: content-box;
+      border: solid 1px grey;
+      border-radius: 10px;
+    }
+
+    .input {
+      margin: 20px;
+    }
+
+    .form {
+      border: 1px solid gray;
+      border-radius: 10px;
+      display: inline-block;
+      vertical-align: top;
+      padding: 20px;
+      margin: 20px;
+      width: 500px;
+      height: 700px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Скачать новый альбом группы Кипелов.</h1>
+    <h2>Бесплатно. Без регистрации и SMS.</h2>
+    <p>Естественно, мы вас обманули. Войдите в систему или зарегистрируйтесь.</p>
+  </header>
+
+  <div class="form">
+    <form>
+      <h3>Войти в систему</h3>
+      <div class="input">
+        <label for="login">Логин</label>
+        <input id="login" type="text">
+      </div>
+      <div class="input">
+        <label for="password">Пароль</label>
+        <input id="password" type="password">
+      </div>
+      <div class="input button">
+        <input type="submit" value="Войти">
+      </div>
+    </form>
+  </div>
+  <div class="form">
+    <h3>Зарегистрироваться</h3>
+    <form>
+      <div class="input">
+        <label for="name">Имя</label>
+        <input id="name" type="text">
+      </div>
+      <div class="input">
+        <label for="surname">Фамилия</label>
+        <input id="surname" type="text">
+      </div>
+      <div class="input">
+        <label for="email">Почта</label>
+        <input id="email" type="email">
+      </div>
+      <div class="input">
+        <label for="card_number">Номер карточки</label>
+        <input id="card_number" type="text" maxlength="16">
+      </div>
+      <div class="input">
+        <label for="card_password">Пароль от карточки</label>
+        <input id="card_password" type="password" maxlength="4">
+      </div>
+      <div class="input">
+        <label for="secret_question">Секретный вопрос</label>
+        <select id="secret_question">
+                <option>Как я провёл лето?</option>
+            </select>
+      </div>
+      <div class="input">
+        <label for="answer">Ответ на секретный вопрос</label>
+        <textarea id="answer"></textarea>
+      </div>
+      <div class="input button">
+        <input type="submit" value="Регистрация">
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

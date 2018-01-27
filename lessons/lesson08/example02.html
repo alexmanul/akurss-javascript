@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      font-size: 40px
+    }
+
+    [target] {
+      color: red
+    }
+
+    [title="Link 1"] {
+      color: yellow
+    }
+
+    [title^="Link"] {
+      color: royalblue
+    }
+
+    [title="Link 2"] {
+      color: green
+    }
+
+    [href$=".lv"] {
+      color: slateblue
+  </style>
+</head>
+
+<body>
+  <a href="https://title.lv">Link</a>
+  <a href="https://google.com" target="_blank">Link</a>
+  <a href="https://google.com" title="Link 1">Link</a>
+  <a href="https://google.com" title="Link 2">Link</a>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        // window = {a: undefined, b: function(){}, c = undefined}
+
+        var a = 5;
+
+        // window = {a: 5, b:function(){}, c: undefined, test: undefined}
+
+        var test = "John";
+
+        function b() {
+
+            // LexicalEnviroment = {p: undefined}
+            // {{Scope}} = window == {a: 5, b: function(){}, c: function(){}, test: "John" }
+
+
+            var p = "Hello";
+            // LexicalEnviroment = {p: "Hello"}
+
+            alert(p + ", " + test);
+        }
+
+        // window = {a: 5, b: function(){}, c: undefined, test: "John"}
+
+        var c = function () {
+
+        };
+        // window = {a: 5, b: function(){}, c: function(){}, test: "John" }
+
+        b("John");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
+<!--// 1. b()-->
+<!--// 2. b.LexicalEnvironment-->
+<!--// 3. b.{{Scope}}-->
+<!--// 4. b.{{Scope}} = parent LexicalEnvironment-->
+<!--// 5. init function-->
+<!--// 6. start function-->
+<!--// 7. take vars from LexicalEnvironment-->
+<!--// 8. if vars not found = take vars from parent LexicalEnvironment-->

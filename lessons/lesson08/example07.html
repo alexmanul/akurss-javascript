@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    .invalid-feedback {
+      color: red;
+      display: none;
+    }
+
+    .is-invalid {
+      border-color: red;
+    }
+
+    .is-invalid + .invalid-feedback{
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <label for="field1">Field: </label>
+    <input type="text" id="field1">
+    <div class="invalid-feedback">Enter value</div>
+    <br>
+    <br>
+    <button id="submit">Submit</button>
+  </div>
+  <script>
+    document.getElementById("submit").onclick = function() {
+      var field1 = document.getElementById("field1");
+      var value = field1.value;
+      if (!value) {
+        field1.className = "is-invalid";
+      } else {
+        field1.className = "";
+      }
+    }
+  </script>
+</body>
+
+</html>

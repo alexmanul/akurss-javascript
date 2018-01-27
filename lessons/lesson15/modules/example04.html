@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | Lesson 15</title>
+    <script>
+        function makeCounter() {
+            var currentCount = 0;
+
+            return {
+                next: function () {
+                    return ++currentCount;
+                },
+
+                previous: function () {
+                    return --currentCount;
+                },
+
+                reset: function () {
+                    currentCount = 0;
+                }
+            }
+        }
+
+        var counter = makeCounter();
+
+        console.log(counter.next());
+        console.log(counter.next());
+        console.log(counter.next());
+
+        console.log(counter.previous());
+        console.log(counter.previous());
+
+        console.log(counter.reset());
+        console.log(counter.next());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

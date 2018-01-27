@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    function changeImage() {
+      document.getElementById("demo").style.display = "none";
+    }
+    function reset() {
+      document.getElementById("demo").style.display = "block";
+    }
+  </script>
+</head>
+
+<body>
+  <img id="demo" src="https://placeimg.com/500/500/nature">
+  <button onclick="changeImage()">Click and change image!</button>
+  <button onclick="reset()">Click and reset!</button>
+</body>
+
+</html>

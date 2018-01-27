@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | Lesson 15</title>
+</head>
+<body>
+<script>
+    "use strict";
+    var user = {
+        name: "John",
+        surname: "Doe",
+        sayHi: function () {
+            alert("Hello! " + "I am " + fullName(this));
+        }
+    };
+
+    function fullName(obj) {
+        return obj.name + " " + obj.surname;
+    }
+
+    user.sayBye = function () {
+        alert("Goodbye! " + "I am " + fullName(this));
+    };
+
+    user.sayHi();
+    user.sayBye();
+
+    function sayNiceDay() {
+        alert("What a nice day! " + "I am " + fullName(this))
+    }
+
+    user.test = sayNiceDay;
+    user.test();
+
+    sayNiceDay();
+</script>
+</body>
+</html>

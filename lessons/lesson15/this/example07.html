@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | Lesson 15</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    function fullName(phrase) {
+        console.log(phrase + this.name + " " + this.surname);
+    }
+
+    var user = {
+        name: "John",
+        surname: "Doe"
+
+    };
+
+    fullName.apply(user, ["I am "]);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+		var result = confirm("Вы согласны?");
+		alert(result);
+
+		function ask(question, yes, no) {
+			if (confirm(question)) {
+				yes();
+			} else {
+				no();
+			}
+		}
+
+		function ok() {
+			alert("Thank you!");
+		}
+
+		function cancel() {
+			alert("Sad...");
+		}
+
+		ask("Do you agree?", ok, cancel);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

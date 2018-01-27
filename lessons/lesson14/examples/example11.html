@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        // LexicalEnviroment = {greet: function(){}, phrase: undefined}
+
+        var phrase = "Hello";
+
+        // LexicalEnviroment = {greet: function(){}, phrase: "Hello"}
+
+        function greet() {
+            // Scope = {greet: function(){}, phrase: "Hello"};
+            // LexicalEnviroment = {sayHi: function(){...}};
+
+            function sayHi() {
+                // Scope = sayHi: function(){...}}
+                // LexicalEnviroment = {}
+
+                console.log(phrase);
+            }
+
+            sayHi();
+        }
+
+        greet();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

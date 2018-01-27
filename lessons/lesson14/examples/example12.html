@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        // LexicalEnvironment = {makeCounter: function(){}, counter: undefined}
+
+        function makeCounter() {
+
+            // Scope =  {makeCounter: function(){}, counter = undefined}
+            // LexicalEnvironment = {currentCount: undefined}
+
+            var currentCount = 1;
+            // LexicalEnvironment = {currentCount: 1}
+
+            return function () {
+                // Scope = {currentCount: 1}
+                return currentCount++;
+            }
+        }
+
+        var counter = makeCounter();  // Scope = {currentCount: 1}
+
+        console.log(counter());  // Scope = {currentCount: 1}
+        console.log(counter());  // Scope = {currentCount: 2}
+        console.log(counter());  // Scope = {currentCount: 3}
+
+        var counter2 = makeCounter();
+
+        console.log(counter2());
+        console.log(counter2());
+        console.log(counter2());
+
+        var counter3 = makeCounter();
+
+        console.log(counter3());
+        console.log(counter3());
+        console.log(counter3());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

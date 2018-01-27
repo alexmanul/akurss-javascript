@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | HomeWork 7: Task 1.1</title>
+    <script>
+		var answer1 = prompt("Введите логин:");
+
+		if (answer1 === "admin") {
+			var answer2 = prompt("Введите пароль");
+			if (answer2 === "123456") {
+				alert("Добро пожаловать!");
+			} else if (!answer2) {
+				alert("Вход отменён");
+			} else {
+				alert("Пароль неверен");
+			}
+		} else if (!answer1) {
+			alert("Вход отменён");
+		} else {
+			alert("Я вас не знаю");
+		}
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

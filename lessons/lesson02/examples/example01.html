@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WEB гиены</title>
+    <style>
+        h1, body {
+            margin: 0;
+        }
+
+        input {
+            margin: 20px;
+        }
+
+        .header {
+            background-color: orange;
+            color: #fff;
+            padding: 25px;
+        }
+
+        .logo {
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+        }
+
+        .lesson {
+            display: inline-block;
+            padding: 25px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 20px;
+            width: 200px;
+            /*height: 200px;*/
+            /*!*overflow: auto;*!*/
+        }
+
+        .top {
+            vertical-align: top;
+        }
+
+        .footer {
+            border-top: 1px solid gray;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .copyright {
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <h1 class="logo">WEB гиены</h1>
+
+</header>
+<section class="main-content">
+    <article class="lesson">
+        <h3>Lesson 1</h3>
+        <form>
+            <label for="test1">Label with for login:</label>
+            <input id="test1" type="text"><br>
+            <label for="test2">Label with for password:</label>
+            <input id="test2" type="password">
+        </form>
+    </article>
+    <article class="lesson top">
+        <h3>Lesson 2</h3>
+        <ul>
+            <li>CSS</li>
+            <li>Box model</li>
+            <li>How to survive during boring 2 hours</li>
+        </ul>
+    </article>
+</section>
+<footer class="footer">
+    <p class="copyright">Copyright 2017. We will prosecute everyone. And teach Java.</p>
+</footer>
+</body>
+</html>

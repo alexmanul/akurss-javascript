@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        function makeGreeter(name) {
+
+            var hello = "Hello";
+
+            return function () {
+
+                return hello + ", " + name;
+            }
+        }
+
+        var greeter1 = makeGreeter("Vasya");
+        var greeter2 = makeGreeter("Sveta");
+
+        console.log(greeter1());
+        console.log(greeter2());
+        console.log(greeter1());
+        console.log(greeter2());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        var now = new Date();
+        console.log(now);
+        console.log(now.getTime());
+
+        now = new Date(0);
+        console.log(now);
+
+        now = new Date(-24 * 60 * 60 * 1000);
+        console.log(now);
+        console.log(new Date("2017-12-16"));
+        console.log(new Date("2017-12-16T15:00:20.565"));
+        console.log(new Date(2017, 11, 16, 12, 56, 23));
+        console.log(new Date(2017, 11, 40, 12, 56, 23));
+
+        now = new Date();
+        console.log(now.getDay());
+        console.log(now.getFullYear());
+        console.log(now.getMonth());
+        console.log(now.getDate());
+        console.log(now.getDay());
+
+        now.setFullYear(275699);
+        console.log(now - new Date());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

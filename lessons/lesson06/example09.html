@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AKurss | Lesson 06 </title>
+    <style>
+        @keyframes example {
+            0% {
+                background-color: orange;
+            }
+            50% {
+                border-radius: 50%;
+            }
+            100% {
+                background-color: yellow;
+            }
+        }
+
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            animation-name: example;
+            animation-delay: 5s;
+            animation-duration: 5s;
+            /*animation-iteration-count: 3;*/
+            animation-direction: alternate;
+            animation-timing-function: ease;
+            animation-fill-mode: backwards;
+        }
+    </style>
+</head>
+
+<body>
+<div class="parent">
+    <div class="child">
+    </div>
+</div>
+</body>
+
+</html>

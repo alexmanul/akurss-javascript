@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        console.log(isNumeric(123));
+        console.log(isNumeric("123"));
+        console.log(isNumeric(true));
+        console.log(isNumeric(12.5));
+        console.log(isNumeric(""));
+
+        function isNumeric(n) {
+            return isFinite(n) && !isNaN(parseFloat(n));
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var person = {
+        name: "Vasjok",
+        secondName: "Petrov",
+        age: 25,
+        grades: {
+            math: [4, 5, 6, 7, 1, 4, 5],
+            sport: [10, 10, 10, 10, 10]
+        }
+    };
+
+    for (var key in person) {
+        console.log("Key: " + key + " value: " + person[key]);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | HomeWork 12 | Add to list</title>
+    <style>
+        input {
+            display: inline;
+            margin: 0.5rem 0;
+            height: 1.5rem;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            display: inline;
+            margin: 0.5rem 0;
+            height: 1.5rem;
+            border-radius: 5px;
+            border: 1px solid darkblue;
+            background-color: royalblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Person list</h1>
+<ul id="list">
+</ul>
+<form name="test" id="myForm" onsubmit="return false;">
+    <label for="name">Name </label>
+    <input type="text" name="inputName" id="name">
+    <label for="surname">Surname </label>
+    <input type="text" name="inputSurname" id="surname">
+    <button>Add</button>
+</form>
+<script>
+	var submitButton = document.getElementsByTagName("button")[0];
+	submitButton.onclick = add;
+
+	function add() {
+		var form = document.forms["test"];
+		var value1 = form["inputName"].value;
+		var value2 = form["inputSurname"].value;
+
+		var element = document.createElement("li");
+		var text = document.createTextNode(value1 + " " + value2);
+		element.appendChild(text);
+		document.getElementById("list").appendChild(element);
+		document.getElementById('myForm').reset();
+		document.getElementById("name").focus();
+	}
+</script>
+</body>
+</html>

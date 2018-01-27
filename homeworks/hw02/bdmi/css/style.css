@@ -1,0 +1,189 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body, div, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+article, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 15px;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #044B66;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------  */
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------  */
+
+.wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  padding: 0 20px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------  */
+
+header {
+  background: #0D759D;
+  padding: 20px 0;
+  color: #fff;
+}
+
+nav {
+  background: #044B66;
+}
+
+main {
+  min-height: 675px;
+}
+
+footer {
+  height: 50px;
+  background: #044B66;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------  */
+
+header .logo {
+  width: 120px;
+  height: 120px;
+  background: url(../img/bdmi-logo.png) center no-repeat;
+  background-size: 100%;
+}
+
+header .slogan {
+  position: absolute;
+  left: 170px;
+  top: 20px;
+}
+
+header .slogan .title {
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+header .slogan .subtitle {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------  */
+
+.content main {
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------  */
+
+.movie {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px 0 auto;
+}
+
+.info {
+  width: 48%;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: justify;
+  margin: 0 auto;
+  transition: width 1s;
+  font-weight: 500;
+  font-size: 15px;
+  font-kerning: auto;
+}
+
+.info .photo img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.description, .credits, .comments, .sections {
+  width: 94%;
+  margin: 10px 1% auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------  */
+
+footer {
+  color: #fff;
+}
+
+footer .copy {
+  line-height: 50px;
+}
+
+@media screen and (max-width: 680px) {
+  header {
+    text-align: center;
+  }
+  header .logo {
+    margin: 0 auto;
+  }
+  header .slogan {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info {
+    width: 100%;
+    margin: 10px 0 auto;
+  }
+  .description, .credits, .comments {
+    width: 94%;
+    margin: 10px -3% auto;
+  }
+}

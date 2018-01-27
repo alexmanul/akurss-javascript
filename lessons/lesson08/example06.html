@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    div {
+      width: 33%;
+      float: left;
+      height: 7rem;
+      background-color: red;
+    }
+
+    @media (min-width:720px) and (max-width:1024px) {
+      div {
+        width: 50%;
+      }
+    }
+
+    @media (max-width:720px) {
+      div {
+        width: 100%;
+      }
+    }
+
+    div:nth-child(2) {
+      background-color: yellow;
+    }
+
+    div:nth-child(3) {
+      background-color: royalblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div>Test 1</div>
+  <div>Test 2</div>
+  <div>Test 3</div>
+</body>
+
+</html>

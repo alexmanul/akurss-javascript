@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header, .footer {
+            background-color: purple;
+            color: white;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 8px;
+            background-color: purple;
+            color: white;
+            margin: 4px;
+        }
+
+        li:hover {
+            background-color: violet;
+        }
+
+        .column {
+            float: left;
+            padding: 15px;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .menu {
+            width: 25%;
+        }
+
+        .content {
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+<div class="header">Header</div>
+<div class="container clearfix">
+    <div class="menu column">
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+        </ul>
+    </div>
+    <div class="content column">
+        <p>Some text goes here</p>
+    </div>
+</div>
+<div class="footer">Footer</div>
+</body>
+</html>

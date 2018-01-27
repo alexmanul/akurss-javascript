@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+	var string = prompt("Введите строку: ");
+
+	function truncate(str, maxlength) {
+		if (str.length > maxlength) {
+			alert(str.substring(0, maxlength - 3) + '...')
+		} else {
+			alert(str);
+		}
+	}
+
+	truncate(string, 20);
+	truncate("Вот, что мне хотелось бы сказать на эту тему:", 20);
+	truncate("Всем привет!", 20);
+</script>
+</body>
+</html>

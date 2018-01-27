@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | HomeWork 11 | Task 6</title>
+</head>
+<body>
+<script>
+
+	var obj = {
+		className: 'open menu'
+	};
+
+	function addClass(obj, cls) {
+		var classNames = obj.className ? obj.className.split(' ') : [];
+
+		for (var i = 0; i < classNames.length; i++) {
+			if (classNames[i] === cls) return;
+		}
+
+		classNames.push(cls);
+		obj.className = classNames.join(' ');
+	}
+
+	addClass(obj, 'new');  // obj.className = 'open menu new'
+	addClass(obj, 'open'); // без изменений (класс 'open' уже существует)
+	addClass(obj, 'me');   // obj.className = 'open menu new me'
+
+	console.log(obj.className);
+
+</script>
+</body>
+</html>

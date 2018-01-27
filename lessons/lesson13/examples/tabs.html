@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <style>
+        .tab {
+            border: 1px solid #53cc97;
+            background-color: lightgreen;
+        }
+
+        .tab button {
+            background-color: lightgreen;
+            float: left;
+            border: none;
+            cursor: pointer;
+            padding: 1rem;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .tab::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .tab button:hover, button:active {
+            background-color: #33b937;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 1rem;
+            animation: fadeEffect 1s;
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="tab">
+    <button class="tablink" onclick="openTab(event, 'html')">HTML</button>
+    <button class="tablink" onclick="openTab(event, 'css')">CSS</button>
+    <button class="tablink" onclick="openTab(event, 'javascript')">JavaScript</button>
+</div>
+<div id="html" class="tabcontent">
+    <h3>HTML</h3>
+    <p>HTML is great!</p>
+</div>
+
+<div id="css" class="tabcontent">
+    <h3>CSS</h3>
+    <p>CSS can be tricky...</p>
+</div>
+
+<div id="javascript" class="tabcontent">
+    <h3>JavaScript</h3>
+    <p>JavaScript is pain!</p>
+</div>
+
+<script>
+	function openTab(event, id) {
+		var tabcontents = document.getElementsByClassName("tabcontent");
+		for (var i = 0; i < tabcontents.length; i++) {
+			tabcontents[i].style.display = 'none';
+		}
+		document.getElementById(id).style.display = 'block';
+
+		var tablinks = document.getElementsByClassName("tablink");
+		for (var i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+
+		event.target.className += " active";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #mario {
+      position: absolute;
+      left: 10px;
+      top: 40px;
+      padding: 10px;
+      margin: 0;
+    }
+
+    #mushroom {
+      position: absolute;
+      float: right;
+      right: 10px;
+      top: 40px;
+      padding: 10px;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  Move Mario to the mushroom:
+  <button onclick="moveMario('mario')">Move!</button>
+
+  <div id="mario">
+    <img src="https://supermariorun.com/img/stage/mario03.png" height="150">
+  </div>
+  <div id="mushroom">
+    <img src="http://expogamefest.com/wp-content/uploads/2017/04/Hongo_de_Mario_Bros-150x150.png">
+  </div>
+  <script>
+    function moveMario() {
+      var mario = (parseInt(document.getElementById('mario').style.left, 10) || 0) + 10;
+      document.getElementById('mario').style.left = mario + 'px';
+    }
+  </script>
+</body>
+
+</html>

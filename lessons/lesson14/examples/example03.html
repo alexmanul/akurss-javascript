@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        var user1 = {
+            name: "John"
+        };
+        var user2 = {
+            surname: "Smith"
+        };
+        var user3 = {
+            email: "test@test.com"
+        };
+
+        var user4 = {};
+
+        copyProperties(user4, user1, user2, user3);
+        console.log(user4);
+
+        function copyProperties() {
+            var destination = arguments[0];
+
+            for (var i = 1; i < arguments.length; i++) {
+                var source = arguments[i];
+
+                for (var key in source) {
+                    destination[key] = source[key];
+                }
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

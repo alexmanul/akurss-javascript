@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | HomeWork 11 | Task 3</title>
+</head>
+<body>
+<script>
+
+	var menu = {
+		width: 200,
+		height: 300,
+		title: "My menu"
+	};
+
+	function multiplyNumeric() {
+		for (var key in menu) {
+			if (isNumeric(menu[key])) {
+				console.log(menu[key] * 2);
+			} else {
+				console.log(menu[key])
+			}
+		}
+	}
+
+	function isNumeric(n) {
+		return isFinite(n) && !isNaN(parseFloat(n));
+	}
+
+	multiplyNumeric(menu);
+
+</script>
+</body>
+</html>

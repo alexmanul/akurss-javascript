@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OUR GRID</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Raleway", Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        div {
+            background-color: #fffa00;
+            border: 1px solid #aa55ff;
+        }
+
+        .col-1 {
+            width: 8.33%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-2 {
+            width: 16.66%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-3 {
+            width: 25%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-4 {
+            width: 33.33%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-5 {
+            width: 41.66%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-6 {
+            width: 50%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-7 {
+            width: 58.33%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-8 {
+            width: 66.66%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-9 {
+            width: 75%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-10 {
+            width: 83.33%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-11 {
+            width: 91.66%;
+            float: left;
+            padding: 15px;
+        }
+
+        .col-12 {
+            width: 100%;
+            float: left;
+            padding: 15px;
+        }
+
+        .row:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="header row">
+    <div class="col-12">
+        <h1>My Site</h1>
+    </div>
+</div>
+<div class="main row">
+    <div class="col-4">
+        Menu
+    </div>
+
+    <div class="col-8">
+        Main content
+        <div class="row">
+            <div class="col-6">
+                Text
+            </div>
+            <div class="col-6">
+                Text
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer row">
+    <div class="col-12">
+        Footer
+    </div>
+</div>
+</body>
+</html>

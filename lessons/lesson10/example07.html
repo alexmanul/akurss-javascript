@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var number = getRandomInt(0, 100);
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function isNumeric(n) {
+            return isFinite(n) && !isNaN(parseFloat(n));
+        }
+
+        alert("I have one number. Try to guess it!");
+        while (true) {
+            var input = +prompt("Input your number");
+            if (!isNumeric(input)) {
+                alert("Are you trying to fool me?")
+            } else if (input > number) {
+                alert("My number is smaller");
+            } else if (input < number) {
+                alert("My number is bigger");
+            } else {
+                alert("BINGO");
+                break;
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

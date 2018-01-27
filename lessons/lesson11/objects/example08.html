@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var person = {
+        name: "Vasjok",
+        age: 25,
+        grades: {
+            math: [4, 5, 6, 7, 1, 4, 5],
+            sport: [10, 10, 10, 10, 10]
+        }
+    };
+    console.log("name" in person);
+    console.log("secondName" in person);
+
+    console.log(person.name);
+    console.log(person.secondName);
+
+    if(person.name){
+        console.log("name found")
+    }
+
+    if(person.secondName){
+        console.log("secondName found")
+    }
+</script>
+</body>
+</html>

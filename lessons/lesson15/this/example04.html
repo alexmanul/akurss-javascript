@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | Lesson 15</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    function User(name, surname, age) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        var phrase = "Hello! I am ";
+        this.sayHi = function () {
+            console.log(phrase + this.name);
+        }
+    }
+
+    var user1 = new User("John", "Doe", 25);
+    var user2 = new User("Anna", "Lea", 27);
+    var user3 = new User("Philips", "Rot", 30);
+
+    console.log(user1);
+    console.log(user2);
+    console.log(user3);
+
+</script>
+</body>
+</html>

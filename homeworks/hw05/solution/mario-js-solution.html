@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #mario {
+            position: absolute;
+        }
+    </style>
+    <script>
+		var position = 0;
+
+		function move() {
+			position = position + 10;
+			document.getElementById("mario").style.left = position + "px";
+		}
+    </script>
+</head>
+
+<body>
+<div>Move Mario to the mashroom:
+    <button onclick="move()">Move</button>
+</div>
+<div style="float: right;">
+    <img src="https://www.mariowiki.com/images/thumb/9/94/MushroomMarioKart8.png/200px-MushroomMarioKart8.png"
+         width="100">
+</div>
+
+<img id="mario" src="https://supermariorun.com/img/stage/mario03.png" width="100">
+</body>
+
+</html>

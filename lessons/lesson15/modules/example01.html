@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript | Lesson 15</title>
+    <script>
+        function makeCounter() {
+
+            // Scope =  {makeCounter: function(){}, counter = undefined}
+            // LexicalEnvironment = {currentCount: undefined}
+
+            var currentCount = 1;
+            // LexicalEnvironment = {currentCount: 1}
+
+            return function () {
+                // Scope = {currentCount: 1}
+                return currentCount++;
+            }
+        }
+
+        var counter = makeCounter();
+
+        console.log(counter());
+        console.log(counter());
+        console.log(counter());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

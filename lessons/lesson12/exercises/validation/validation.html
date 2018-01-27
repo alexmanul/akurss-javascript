@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation</title>
+    <style>
+        input {
+            display: block;
+            margin: 0.5rem 0;
+            height: 2rem;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            display: block;
+            margin: 0.5rem 0;
+            height: 2rem;
+            border-radius: 5px;
+            border: 1px solid darkblue;
+            background-color: royalblue;
+            color: white;
+        }
+
+        .error {
+            padding: 15px;
+            border: 1px solid darkred;
+            border-radius: 5px;
+            color: white;
+            background-color: red;
+            transition: background-color 0.2s ;
+        }
+    </style>
+</head>
+<body>
+<script src="validation2.js"></script>
+
+<form name="test" onsubmit="return false;">
+    <label for="testInput">Enter number: </label><br>
+    <input type="text" name="testInput" id="testInput">
+    <button id="submit">Submit</button>
+</form>
+<div id="info"></div>
+<button id="back">Back</button>
+<script src="validation1.js"></script>
+</body>
+</html>

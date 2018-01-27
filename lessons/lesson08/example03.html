@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      font-size: 40px
+    }
+
+    a::before {
+      content: '* ';
+
+      color: red
+    }
+
+    a::after {
+      content: '% ';
+    }
+
+    a {
+      color: violet
+    }
+
+    a:visited {
+      color: black
+    }
+
+    a:hover {
+      color: green
+    }
+  </style>
+</head>
+
+<body>
+  <a href="https://title.lv">Link</a>
+  <a href="https://google.com" target="_blank">Link</a>
+  <a href="https://google.com" title="Link 1">Link</a>
+  <a href="https://google.com" title="Link 2">Link</a>
+</body>
+
+</html>

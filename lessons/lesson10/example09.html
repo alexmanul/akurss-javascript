@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var str = "Hello World Hello World cat Hello World Hello World Hello World cat Hello World";
+
+        console.log(str.indexOf("cat"));
+        console.log(str.indexOf("cat", 37));
+
+        console.log(str.substring(0, 5));
+        console.log(str.substr(6, 5));
+
+        console.log(str.substr(str.indexOf("World"), 5));
+        console.log(str.substring(str.indexOf("World"), str.indexOf("World") + 5));
+
+        console.log(str.slice(0, 5));
+        console.log(str.slice(-12, -12));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
